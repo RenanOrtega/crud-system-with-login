@@ -1,0 +1,67 @@
+@use '../variables'
+
+#login-container
+    max-width: 500px
+    width: 50%
+    margin-left: auto
+    margin-right: auto
+    padding: 2rem 2rem
+    margin-top: 10vh
+    border-radius: variables.$container-border-radius
+    border: 1px solid #b3b2b2
+    text-align: center
+    box-shadow: 1px 1px 20px 4px rgba(0, 0, 0, 0.2)
+
+    form
+        margin-top: 2rem
+        margin-bottom: 3rem
+
+        label, input
+            display: block
+            width: 100%
+            text-align: left
+
+        label
+            font-weight: bold
+            font-size: .8rem
+
+        input
+            border-bottom: 2px solid variables.$form-input-color
+            padding: .5rem
+            font-size: .9rem
+            margin-bottom: 1rem
+
+        input:focus
+            border-bottom: 2px solid variables.$form-input-color-secondary
+
+        #forgot-password
+            text-align: right
+            display: block
+
+        input[type="submit"]
+            text-align: center
+            text-transform: uppercase
+            font-weight: bold
+            border: none
+            height: 3rem
+            border-radius: variables.$container-border-radius
+            margin-top: 2rem
+            background-color: variables.$form-input-color
+            cursor: pointer
+
+        input[type="submit"]:hover
+            background-color: variables.$form-input-color-secondary
+            transition: .35s
+
+    #social-container,
+    #social-container p
+        margin-bottom: 2rem
+
+    #social-container svg
+        font-size: 2rem
+        cursor: pointer
+        color: variables.$form-input-color
+        margin: 0 1.2rem 0 1.2rem
+
+    #social-container svg:hover
+        color: variables.$form-input-color-secondary
